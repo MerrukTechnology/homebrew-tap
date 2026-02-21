@@ -3,7 +3,7 @@ cask "opencode-native" do
   name "opencode-native"
   desc "Lightweight, native AI coding agent optimized for performance."
   homepage "https://github.com/MerrukTechnology/homebrew-tap"
-  version "1.3.0"
+  version "1.5.0"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,22 +14,22 @@ cask "opencode-native" do
   on_macos do
     on_intel do
       url "https://github.com/MerrukTechnology/OpenCode-Native/releases/download/v#{version}/opencode-native_darwin_x86_64.tar.gz"
-      sha256 "544961b9530d0f6b6e3d760a346de7a34fa7fa6e8a3685766f9882a50d87f893"
+      sha256 "031993268241d986e71c96894baf82007121ce982e30326b566941fc3a7149f9"
     end
     on_arm do
       url "https://github.com/MerrukTechnology/OpenCode-Native/releases/download/v#{version}/opencode-native_darwin_aarch64.tar.gz"
-      sha256 "7e20fce28b55fd1a21597aabf0497ba9717ed426deced4ba9066e5e031e2a8f4"
+      sha256 "8a11e2257867f39816f223abef8511228d46d4c2c09c93acb485395274b69b32"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/MerrukTechnology/OpenCode-Native/releases/download/v#{version}/opencode-native_linux_x86_64.tar.gz"
-      sha256 "9e1f8bfd6482c5ba574c15ba4f0be49d29b0492954941830ec7d429a5af365b6"
+      sha256 "4164a96403a1333fca1412bd44276ef8b399a9520211efdbf234796e7607b8d8"
     end
     on_arm do
       url "https://github.com/MerrukTechnology/OpenCode-Native/releases/download/v#{version}/opencode-native_linux_aarch64.tar.gz"
-      sha256 "a430cfa47c3f21f55bc64604ac461b6fb27674cc8b64a178c41aad805a7d5158"
+      sha256 "8f5c67d6e3a018c079f8916c8b30e37a3e405459a341a6e8f136899360359ef5"
     end
   end
 
