@@ -5,21 +5,21 @@
 class Opencode < Formula
   desc "Lightweight, native AI coding agent optimized for performance."
   homepage "https://github.com/MerrukTechnology/OpenCode-Native"
-  version "1.10.0"
+  version "1.11.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/MerrukTechnology/OpenCode-Native/releases/download/v1.10.0/opencode-native_darwin_x86_64.tar.gz"
-      sha256 "2eb079eb83772425a1932003b8c8035923c2be2d7677fe66e657be4e50692ae3"
+      url "https://github.com/MerrukTechnology/OpenCode-Native/releases/download/v1.11.0/opencode-native_darwin_x86_64.tar.gz"
+      sha256 "45e32ffd60cf3f1aa33268d17fbc85e4e8b95edfcefc407d5eec7fc8ca08682a"
 
       define_method(:install) do
         bin.install "opencode"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/MerrukTechnology/OpenCode-Native/releases/download/v1.10.0/opencode-native_darwin_aarch64.tar.gz"
-      sha256 "21c1cea6351f0f534908dfca2cabc1e349067c097a14cfb602fe0f3ac76d009c"
+      url "https://github.com/MerrukTechnology/OpenCode-Native/releases/download/v1.11.0/opencode-native_darwin_aarch64.tar.gz"
+      sha256 "37a51ae8093daf64e6705995f8447946f3507d623607c53b3226896a39f59a5d"
 
       define_method(:install) do
         bin.install "opencode"
@@ -29,15 +29,15 @@ class Opencode < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/MerrukTechnology/OpenCode-Native/releases/download/v1.10.0/opencode-native_linux_x86_64.tar.gz"
-      sha256 "7a7ba1c5a936935bb86d79f688df945eaea3f6bb591bb941d48b221c6d3b7166"
+      url "https://github.com/MerrukTechnology/OpenCode-Native/releases/download/v1.11.0/opencode-native_linux_x86_64.tar.gz"
+      sha256 "313f22117e770df620ce6e1982da6a07caf4d9c8175647b00c864ca425fcdf4e"
       define_method(:install) do
         bin.install "opencode"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/MerrukTechnology/OpenCode-Native/releases/download/v1.10.0/opencode-native_linux_aarch64.tar.gz"
-      sha256 "4bde014a191fa4be6320b4137111b447bc4b582df6ced1f0b20caa9a3a76439f"
+      url "https://github.com/MerrukTechnology/OpenCode-Native/releases/download/v1.11.0/opencode-native_linux_aarch64.tar.gz"
+      sha256 "d6b927eb00d0198b5a7e9b1f1285225453be4570f8a81eb8b958ae439ac4e80d"
       define_method(:install) do
         bin.install "opencode"
       end
